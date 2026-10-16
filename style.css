@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+p, small {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+h2, h3 {
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+button {
+    padding: 12px;
+    color: white;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.red {
+    background: #e50000;
+    border-color: #e50000;
+}
+
+nav, .heading, .trial, .bottom, .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    background: #333 url("https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg") center / cover;
+    background-blend-mode: multiply;
+}
+
+nav, footer {
+    padding: 30px 6%;
+}
+
+.logo {
+    color: #e50000;
+}
+
+.menu {
+    padding: 5px;
+    background: #111;
+    border-radius: 6px;
+}
+
+.active {
+    background: #292929;
+}
+
+.hero {
+    max-width: 800px;
+    margin: auto;
+    padding: 230px 20px 70px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #bbb;
+}
+
+main {
+    width: 88%;
+    margin: auto;
+}
+
+section {
+    margin: 70px 0;
+}
+
+.movies, .grid, .faq {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.movies {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 20px;
+    background: #1a1a1a;
+    border: 1px solid #292929;
+    border-radius: 7px;
+}
+
+.movies img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movies h3 {
+    margin: 12px 0 0;
+}
+
+.faq {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.question {
+    padding: 16px 0;
+    border-bottom: 1px solid #572323;
+}
+
+.question h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: 10px;
+}
+
+.question span {
+    padding: 10px;
+    background: #222;
+    border-radius: 4px;
+}
+
+.question b {
+    margin-left: auto;
+}
+
+.question p {
+    margin: 8px 0 0 44px;
+    font-size: 9px;
+}
+
+.plans h4 {
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.plans p {
+    min-height: 65px;
+}
+
+.trial {
+    padding: 45px;
+    background: #290d0d;
+    border-radius: 8px;
+}
+
+.heading > button, .trial > button {
+    flex-shrink: 0;
+}
+
+footer {
+    background: #0f0f0f;
+}
+
+.footer-links {
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.bottom {
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
